@@ -1,0 +1,737 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Nakshatra Photography &amp; Graphics Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Animate fadeInUp */
+    .fadeInUp {
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Animate zoomIn */
+    .zoomIn {
+      opacity: 0;
+      transform: scale(0.8);
+      animation-fill-mode: forwards;
+      animation-name: zoomIn;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+    @keyframes zoomIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    /* Animate slideInLeft */
+    .slideInLeft {
+      opacity: 0;
+      transform: translateX(-30px);
+      animation-fill-mode: forwards;
+      animation-name: slideInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+    @keyframes slideInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    /* Animate slideInRight */
+    .slideInRight {
+      opacity: 0;
+      transform: translateX(30px);
+      animation-fill-mode: forwards;
+      animation-name: slideInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+    @keyframes slideInRight {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    /* Scroll container */
+    .scroll-container {
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; /* Firefox */
+    }
+    .scroll-container::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-900">
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white shadow-md z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-bold text-indigo-600 tracking-wide select-none" href="#">
+     Nakshatra
+     <span class="text-pink-600">
+      PhotoGraphy
+     </span>
+    </a>
+    <ul class="hidden md:flex space-x-8 font-medium text-gray-700">
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#portfolio">
+       Portfolio
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#services">
+       Services
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#album">
+       Album Design
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#video-editing">
+       Video Editing
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#equipment">
+       Equipment
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#offer">
+       Offer
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#booking">
+       Booking
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#testimonials">
+       Testimonials
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-600 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <button class="md:hidden focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars text-2xl text-gray-700">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 px-6 py-4 font-medium text-gray-700">
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#portfolio">
+       Portfolio
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#services">
+       Services
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#album">
+       Album Design
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#video-editing">
+       Video Editing
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#equipment">
+       Equipment
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#offer">
+       Offer
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#booking">
+       Booking
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#testimonials">
+       Testimonials
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Live Shoot Photos Section -->
+  <section class="pt-24 pb-16 bg-gradient-to-br from-indigo-600 via-pink-600 to-pink-400 text-white" id="home">
+   <div class="max-w-7xl mx-auto px-6 text-center">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-6 fadeInUp" style="animation-delay: 0.3s">
+     Live Shoot Photos
+    </h1>
+    <p class="max-w-3xl mx-auto text-lg md:text-xl mb-12 fadeInUp" style="animation-delay: 0.6s">
+     Experience the magic of Nakshatra PhotoGraphy &amp; Graphics through these live moments captured during real shoots.
+    </p>
+    <div class="scroll-container flex space-x-6 max-w-5xl mx-auto pb-4">
+     <img alt="Bride and groom walking hand in hand on a beach during sunset with soft pastel colors" class="rounded-lg shadow-lg w-72 h-48 object-cover flex-shrink-0" height="320" src="https://storage.googleapis.com/a1aa/image/7b81a597-8dad-42ee-35d6-72bec66b5013.jpg" width="480"/>
+     <img alt="Couple laughing and holding hands in a sunset field with warm golden light during pre-wedding shoot" class="rounded-lg shadow-lg w-72 h-48 object-cover flex-shrink-0" height="320" src="https://storage.googleapis.com/a1aa/image/f01b3a7c-768c-4d18-8e08-4943811479a0.jpg" width="480"/>
+     <img alt="Wedding reception dance with couple celebrating surrounded by guests and colorful lights" class="rounded-lg shadow-lg w-72 h-48 object-cover flex-shrink-0" height="320" src="https://storage.googleapis.com/a1aa/image/ee48c3f2-62bf-4d2e-8635-eb7771c770f1.jpg" width="480"/>
+     <img alt="Bride and groom exchanging vows in a decorated outdoor wedding venue with floral arrangements" class="rounded-lg shadow-lg w-72 h-48 object-cover flex-shrink-0" height="320" src="https://storage.googleapis.com/a1aa/image/b3ba475c-e255-41bb-670f-3732ac324d49.jpg" width="480"/>
+     <img alt="Bridal portrait with traditional attire and jewelry, soft natural lighting highlighting details" class="rounded-lg shadow-lg w-72 h-48 object-cover flex-shrink-0" height="320" src="https://storage.googleapis.com/a1aa/image/e09e240a-ad66-4556-7bbe-ace5a4e59f46.jpg" width="480"/>
+    </div>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="about">
+   <div class="md:flex md:items-center md:space-x-12">
+    <div class="md:w-1/2 mb-12 md:mb-0 fadeInUp" style="animation-delay: 0.3s">
+     <img alt="Photographer at work capturing moments with professional camera in natural light" class="rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/3c289176-a571-416c-e153-2a7b228a157b.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2 fadeInUp" style="animation-delay: 0.6s">
+     <h2 class="text-4xl font-bold mb-6 text-indigo-600">
+      About Nakshatra PhotoGraphy
+     </h2>
+     <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+      Nakshatra PhotoGraphy &amp; Graphics is dedicated to capturing the essence of your special moments with artistic vision and technical expertise. With years of experience in wedding, pre-wedding, and event photography, we bring your memories to life through stunning visuals.
+     </p>
+     <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+      Our passion for photography and graphics ensures every shoot is unique, creative, and tailored to your style. We use the latest equipment and techniques to deliver high-quality images that tell your story.
+     </p>
+     <p class="text-lg text-gray-700 leading-relaxed">
+      Founder:
+      <span class="font-semibold text-indigo-600">
+       Harshal Meher
+      </span>
+      <br/>
+      Contact:
+      <a class="text-pink-600 hover:underline" href="tel:+919834996139">
+       9834996139
+      </a>
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Portfolio Section -->
+  <section class="bg-gray-100 py-20 px-6" id="portfolio">
+   <h2 class="text-4xl font-bold text-center text-indigo-600 mb-12 fadeInUp" style="animation-delay: 0.3s">
+    Portfolio
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition fadeInUp" style="animation-delay: 0.4s">
+     <img alt="Bride and groom exchanging vows in a decorated outdoor wedding venue with floral arrangements" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/b3ba475c-e255-41bb-670f-3732ac324d49.jpg" width="600"/>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition fadeInUp" style="animation-delay: 0.5s">
+     <img alt="Couple laughing and holding hands in a sunset field with warm golden light during pre-wedding shoot" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/f01b3a7c-768c-4d18-8e08-4943811479a0.jpg" width="600"/>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition fadeInUp" style="animation-delay: 0.6s">
+     <img alt="Bridal portrait with traditional attire and jewelry, soft natural lighting highlighting details" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e09e240a-ad66-4556-7bbe-ace5a4e59f46.jpg" width="600"/>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition fadeInUp" style="animation-delay: 0.7s">
+     <img alt="Groom portrait wearing classic suit with confident pose and studio lighting" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/271d5027-4b67-4d99-4b3c-2aee1154bbd1.jpg" width="600"/>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition fadeInUp" style="animation-delay: 0.8s">
+     <img alt="Wedding reception dance with couple celebrating surrounded by guests and colorful lights" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/ee48c3f2-62bf-4d2e-8635-eb7771c770f1.jpg" width="600"/>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition fadeInUp" style="animation-delay: 0.9s">
+     <img alt="Pre-wedding photoshoot with couple posing in an urban setting with modern architecture" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/816bc5aa-f53b-40da-fc7c-df2167c62f13.jpg" width="600"/>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition fadeInUp" style="animation-delay: 1.0s">
+     <img alt="Bride and groom walking hand in hand on a beach during sunset with soft pastel colors" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/7b81a597-8dad-42ee-35d6-72bec66b5013.jpg" width="600"/>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition fadeInUp" style="animation-delay: 1.1s">
+     <img alt="Closeup of wedding rings on a rustic wooden surface with soft natural light" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/64f15d04-1061-4be4-098a-78ac509c7b2d.jpg" width="600"/>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer transform hover:scale-105 transition fadeInUp" style="animation-delay: 1.2s">
+     <img alt="Bride getting ready with makeup artist applying lipstick in a bright room" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/ff0d9214-4bee-4ed3-6640-639a96af4a98.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Services Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="services">
+   <h2 class="text-4xl font-bold text-center text-indigo-600 mb-12 fadeInUp" style="animation-delay: 0.3s">
+    Our Services
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center fadeInUp" style="animation-delay: 0.4s">
+     <i class="fas fa-camera-retro text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-2xl font-semibold mb-4">
+      Wedding Photography
+     </h3>
+     <p class="text-gray-700 leading-relaxed">
+      Capturing every magical moment of your wedding day with creativity and professionalism.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center fadeInUp" style="animation-delay: 0.6s">
+     <i class="fas fa-heart text-pink-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-2xl font-semibold mb-4">
+      Pre-Wedding Shoots
+     </h3>
+     <p class="text-gray-700 leading-relaxed">
+      Beautifully crafted pre-wedding sessions to tell your love story in stunning visuals.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center fadeInUp" style="animation-delay: 0.8s">
+     <i class="fas fa-images text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-2xl font-semibold mb-4">
+      Event Photography
+     </h3>
+     <p class="text-gray-700 leading-relaxed">
+      Professional coverage for all types of events, ensuring every detail is perfectly captured.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center fadeInUp" style="animation-delay: 1.0s">
+     <i class="fas fa-video text-pink-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-2xl font-semibold mb-4">
+      Videography
+     </h3>
+     <p class="text-gray-700 leading-relaxed">
+      High-quality video production to preserve your memories in motion with cinematic style.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center fadeInUp" style="animation-delay: 1.2s">
+     <i class="fas fa-paint-brush text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-2xl font-semibold mb-4">
+      Graphic Design
+     </h3>
+     <p class="text-gray-700 leading-relaxed">
+      Custom graphics and photo editing services to enhance your images and branding.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center fadeInUp" style="animation-delay: 1.4s">
+     <i class="fas fa-cloud-upload-alt text-pink-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-2xl font-semibold mb-4">
+      Online Gallery &amp; Prints
+     </h3>
+     <p class="text-gray-700 leading-relaxed">
+      Secure online galleries and professional print options for your convenience.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Album Design Section -->
+  <section class="bg-white py-20 px-6" id="album">
+   <h2 class="text-4xl font-bold text-center text-indigo-600 mb-12 fadeInUp" style="animation-delay: 0.3s">
+    Album Design
+   </h2>
+   <p class="max-w-3xl mx-auto text-center text-gray-700 mb-12 fadeInUp" style="animation-delay: 0.5s">
+    We create beautiful, custom-designed photo albums that tell your story with elegance and style.
+   </p>
+   <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div class="rounded-lg shadow-lg overflow-hidden fadeInUp" style="animation-delay: 0.6s">
+     <img alt="Elegant wedding photo album with hardcover and artistic layout" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/d8621238-6018-404c-2d53-cd59186dda13.jpg" width="600"/>
+    </div>
+    <div class="rounded-lg shadow-lg overflow-hidden fadeInUp" style="animation-delay: 0.8s">
+     <img alt="Closeup of open photo album showing beautifully arranged wedding photos" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/5bed90cb-b6b4-49a4-ba32-b345e5fb0f7d.jpg" width="600"/>
+    </div>
+    <div class="rounded-lg shadow-lg overflow-hidden fadeInUp" style="animation-delay: 1.0s">
+     <img alt="Modern photo album with sleek design and vibrant images" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/6511f2e2-a13a-46a7-ed6b-cb09f5be10dc.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Video Editing Section -->
+  <section class="bg-gray-100 py-20 px-6" id="video-editing">
+   <h2 class="text-4xl font-bold text-center text-indigo-600 mb-12 fadeInUp" style="animation-delay: 0.3s">
+    Video Editing
+   </h2>
+   <p class="max-w-3xl mx-auto text-center text-gray-700 mb-12 fadeInUp" style="animation-delay: 0.5s">
+    Our professional video editing services bring your footage to life with cinematic effects, smooth transitions, and perfect color grading.
+   </p>
+   <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div class="rounded-lg shadow-lg overflow-hidden fadeInUp" style="animation-delay: 0.6s">
+     <img alt="Video editing timeline on computer screen with colorful clips and effects" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/3d4e2df0-c28e-4581-53e5-95c8cf0d979e.jpg" width="600"/>
+    </div>
+    <div class="rounded-lg shadow-lg overflow-hidden fadeInUp" style="animation-delay: 0.8s">
+     <img alt="Professional video editor working on laptop with headphones and editing software" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/bc19fc6b-9ba3-4fe1-cae9-89b8fb43f4a7.jpg" width="600"/>
+    </div>
+    <div class="rounded-lg shadow-lg overflow-hidden fadeInUp" style="animation-delay: 1.0s">
+     <img alt="Final wedding video preview on large screen with couple watching happily" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/b6424ae8-13fc-41fc-8e47-28c3696ed4d4.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Offer Section -->
+  <section class="bg-pink-600 py-20 px-6 text-white" id="offer">
+   <div class="max-w-4xl mx-auto text-center fadeInUp" style="animation-delay: 0.3s">
+    <h2 class="text-4xl font-bold mb-6">
+     Special Offer
+    </h2>
+    <p class="text-xl mb-8">
+     Book your wedding or pre-wedding shoot now and get a 20% discount on all packages! Limited time offer.
+    </p>
+    <a href="#booking" class="inline-block bg-white text-pink-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition">
+     Book Now
+    </a>
+   </div>
+  </section>
+  <!-- Booking Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="booking">
+   <h2 class="text-4xl font-bold text-center text-indigo-600 mb-12 fadeInUp" style="animation-delay: 0.3s">
+    Booking Shoot Highlight
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center fadeInUp" style="animation-delay: 0.4s">
+     <i class="fas fa-calendar-check text-pink-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-2xl font-semibold mb-4">
+      Easy Scheduling
+     </h3>
+     <p class="text-gray-700 leading-relaxed">
+      Book your shoot at your convenience with our flexible scheduling options.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center fadeInUp" style="animation-delay: 0.6s">
+     <i class="fas fa-bolt text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-2xl font-semibold mb-4">
+      Quick Turnaround
+     </h3>
+     <p class="text-gray-700 leading-relaxed">
+      Receive your edited photos and videos promptly without compromising quality.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center fadeInUp" style="animation-delay: 0.8s">
+     <i class="fas fa-star text-pink-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-2xl font-semibold mb-4">
+      Personalized Experience
+     </h3>
+     <p class="text-gray-700 leading-relaxed">
+      Tailored shoots to match your style and preferences for unforgettable memories.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Equipment Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="equipment">
+   <h2 class="text-4xl font-bold text-center text-indigo-600 mb-12 fadeInUp" style="animation-delay: 0.3s">
+    Our Equipment
+   </h2>
+   <p class="text-center max-w-3xl mx-auto text-gray-700 mb-12 fadeInUp" style="animation-delay: 0.5s">
+    We use top-of-the-line cameras and video equipment from trusted brands to ensure the highest quality for your shoots.
+   </p>
+   <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 max-w-5xl mx-auto">
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center fadeInUp" style="animation-delay: 0.6s">
+     <img alt="Professional Nikon DSLR camera with lens on white background" class="mx-auto mb-6 w-40 h-28 object-contain" height="280" src="https://storage.googleapis.com/a1aa/image/c6a4d4f7-e7fa-424a-7574-bf5f5a249f97.jpg" width="400"/>
+     <h3 class="text-2xl font-semibold mb-2 text-indigo-600">
+      Nikon Cameras
+     </h3>
+     <p class="text-gray-700">
+      Renowned for their sharp image quality and reliability, Nikon DSLR and mirrorless cameras are our go-to for stunning photography.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center fadeInUp" style="animation-delay: 0.8s">
+     <img alt="Sony professional video camera on tripod with lens and controls" class="mx-auto mb-6 w-40 h-28 object-contain" height="280" src="https://storage.googleapis.com/a1aa/image/67fc2a26-1e15-4d6a-f359-fbe1a116e104.jpg" width="400"/>
+     <h3 class="text-2xl font-semibold mb-2 text-indigo-600">
+      Sony Video Cameras
+     </h3>
+     <p class="text-gray-700">
+      Our videography is powered by Sony’s advanced video cameras, delivering cinematic quality and smooth footage.
+     </p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center fadeInUp" style="animation-delay: 1.0s">
+     <img alt="Canon DSLR camera with zoom lens on white background" class="mx-auto mb-6 w-40 h-28 object-contain" height="280" src="https://storage.googleapis.com/a1aa/image/ab857e29-fa34-408d-04be-c303e2d768ba.jpg" width="400"/>
+     <h3 class="text-2xl font-semibold mb-2 text-indigo-600">
+      Canon Cameras
+     </h3>
+     <p class="text-gray-700">
+      Canon’s versatile DSLR cameras help us capture vibrant and detailed images for every occasion.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="bg-indigo-50 py-20 px-6" id="testimonials">
+   <h2 class="text-4xl font-bold text-center text-indigo-600 mb-12 fadeInUp" style="animation-delay: 0.3s">
+    What Clients Say
+   </h2>
+   <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="bg-white rounded-lg shadow-lg p-8 fadeInUp" style="animation-delay: 0.4s">
+     <p class="text-gray-700 italic mb-6">
+      "Harshal and his team captured our wedding beautifully. The photos are stunning and the service was exceptional!"
+     </p>
+     <div class="flex items-center space-x-4">
+      <div class="w-14 h-14 rounded-full bg-indigo-200 flex items-center justify-center text-indigo-600 font-semibold text-lg select-none">
+       S
+      </div>
+      <div>
+       <p class="font-semibold text-indigo-600">
+        Soyandra Tulaskar
+       </p>
+       <p class="text-sm text-gray-500">
+        Client
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 fadeInUp" style="animation-delay: 0.6s">
+     <p class="text-gray-700 italic mb-6">
+      "Amazing pre-wedding shoot experience! The photoshoot was fun and the results exceeded our expectations."
+     </p>
+     <div class="flex items-center space-x-4">
+      <div class="w-14 h-14 rounded-full bg-indigo-200 flex items-center justify-center text-indigo-600 font-semibold text-lg select-none">
+       D
+      </div>
+      <div>
+       <p class="font-semibold text-indigo-600">
+        Damodhar Kamble
+       </p>
+       <p class="text-sm text-gray-500">
+        Client
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 fadeInUp" style="animation-delay: 0.8s">
+     <p class="text-gray-700 italic mb-6">
+      "Professional and creative photography for our corporate event. Highly recommended!"
+     </p>
+     <div class="flex items-center space-x-4">
+      <div class="w-14 h-14 rounded-full bg-indigo-200 flex items-center justify-center text-indigo-600 font-semibold text-lg select-none">
+       A
+      </div>
+      <div>
+       <p class="font-semibold text-indigo-600">
+        Akash Chambhare
+       </p>
+       <p class="text-sm text-gray-500">
+        Client
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+    <div class="bg-white rounded-lg shadow-lg p-8 fadeInUp" style="animation-delay: 1.0s">
+     <p class="text-gray-700 italic mb-6">
+      "The team was very professional and captured every moment perfectly. Highly satisfied!"
+     </p>
+     <div class="flex items-center space-x-4">
+      <div class="w-14 h-14 rounded-full bg-indigo-200 flex items-center justify-center text-indigo-600 font-semibold text-lg select-none">
+       R
+      </div>
+      <div>
+       <p class="font-semibold text-indigo-600">
+        Rahul
+       </p>
+       <p class="text-sm text-gray-500">
+        Client
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 fadeInUp" style="animation-delay: 1.2s">
+     <p class="text-gray-700 italic mb-6">
+      "Creative shots and excellent service. Would recommend to anyone looking for quality photography."
+     </p>
+     <div class="flex items-center space-x-4">
+      <div class="w-14 h-14 rounded-full bg-indigo-200 flex items-center justify-center text-indigo-600 font-semibold text-lg select-none">
+       J
+      </div>
+      <div>
+       <p class="font-semibold text-indigo-600">
+        Jagrut
+       </p>
+       <p class="text-sm text-gray-500">
+        Client
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-8 fadeInUp" style="animation-delay: 1.4s">
+     <p class="text-gray-700 italic mb-6">
+      "Excellent photography and videography services. The team was very cooperative and professional."
+     </p>
+     <div class="flex items-center space-x-4">
+      <div class="w-14 h-14 rounded-full bg-indigo-200 flex items-center justify-center text-indigo-600 font-semibold text-lg select-none">
+       S
+      </div>
+      <div>
+       <p class="font-semibold text-indigo-600">
+        Samir
+       </p>
+       <p class="text-sm text-gray-500">
+        Client
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+    <div class="bg-white rounded-lg shadow-lg p-8 fadeInUp" style="animation-delay: 1.6s">
+     <p class="text-gray-700 italic mb-6">
+      "Very professional and creative team. They made our event memorable with their photography."
+     </p>
+     <div class="flex items-center space-x-4">
+      <div class="w-14 h-14 rounded-full bg-indigo-200 flex items-center justify-center text-indigo-600 font-semibold text-lg select-none">
+       D
+      </div>
+      <div>
+       <p class="font-semibold text-indigo-600">
+        Dhanu
+       </p>
+       <p class="text-sm text-gray-500">
+        Client
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-indigo-600 py-20 px-6 text-white" id="contact">
+   <h2 class="text-4xl font-bold text-center mb-12 fadeInUp" style="animation-delay: 0.3s">
+    Get In Touch
+   </h2>
+   <div class="max-w-3xl mx-auto bg-indigo-700 rounded-lg shadow-lg p-10 fadeInUp" style="animation-delay: 0.6s">
+    <form action="#" class="space-y-6" id="contact-form" method="POST" novalidate="">
+     <div>
+      <label class="block mb-2 font-semibold" for="name">
+       Name
+      </label>
+      <input class="w-full px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="email">
+       Email
+      </label>
+      <input class="w-full px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-500" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="message">
+       Message
+      </label>
+      <textarea class="w-full px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-500" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <button class="w-full bg-pink-500 hover:bg-pink-600 transition rounded-md py-3 font-semibold text-white shadow-lg" type="submit">
+      Send Message
+     </button>
+    </form>
+    <div class="mt-8 text-center text-pink-300">
+     <p>
+      Or contact directly at:
+     </p>
+     <p class="mt-2 text-lg font-semibold">
+      <i class="fas fa-phone-alt mr-2">
+      </i>
+      <a class="hover:underline" href="tel:+919834996139">
+       Harshal Meher: 9834996139
+      </a>
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8 px-6 text-center">
+   <p class="mb-4">
+    © 2024 Nakshatra PhotoGraphy &amp; Graphics. All rights reserved.
+   </p>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Animate elements on scroll
+    const animatedElements = document.querySelectorAll('.fadeInUp, .zoomIn, .slideInLeft, .slideInRight');
+
+    function animateOnScroll() {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      animatedElements.forEach((el) => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          el.style.animationPlayState = 'running';
+          el.style.opacity = 1;
+          el.style.transform = 'none';
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+
+    // Auto scroll live shoot photos
+    const scrollContainer = document.querySelector('.scroll-container');
+    let scrollAmount = 0;
+    const scrollStep = 1;
+    const scrollDelay = 20;
+
+    function autoScroll() {
+      if (!scrollContainer) return;
+      scrollAmount += scrollStep;
+      if (scrollAmount >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+        scrollAmount = 0;
+      }
+      scrollContainer.scrollLeft = scrollAmount;
+      requestAnimationFrame(autoScroll);
+    }
+    window.addEventListener('load', () => {
+      requestAnimationFrame(autoScroll);
+    });
+  </script>
+ </body>
+</html>
